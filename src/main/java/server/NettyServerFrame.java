@@ -12,6 +12,7 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class NettyServerFrame  extends JFrame {
 
     NettyServerFrame(){
@@ -23,7 +24,6 @@ public class NettyServerFrame  extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
     }
-
     void init(){
         this.setLayout(new GridLayout(4,3,10,5)); //默认为1行，n列；2行3列，水平间距10，垂直间距5
         ArrayList<ServerCommnad> serverCommnads =this.getServerCommands();

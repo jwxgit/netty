@@ -1,5 +1,7 @@
 package utils;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.*;
 import java.util.Base64;
 import java.util.HashMap;
@@ -13,7 +15,13 @@ public class ImageUtils {
 
     }
     private static void loadImageUtils(){
-        String path =  ImageUtils.class.getResource("/").getPath();
+        System.out.println("资源路径:" + System.getProperty("user.dir"));
+        String env = System.getProperty("env");
+        String path = "";
+        if(StringUtils.isNotEmpty(env) && env.equals("pro"))
+            path = System.getProperty("user.dir") + "/classes";
+        else
+            path =  ImageUtils.class.getResource("/").getPath();
         File  file  =new File(path);
         File[]  files = file.listFiles();
         for (File  f:files){
