@@ -204,7 +204,7 @@ public class NettyServerFrame  extends JFrame {
     }
 
     public static void main(String args[]) throws InterruptedException {
-        new NettyServer(9999);
+        new NettyServer(10000);
         new NettyServerFrame();
     }
 }
