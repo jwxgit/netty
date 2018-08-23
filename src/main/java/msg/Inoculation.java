@@ -22,7 +22,7 @@ public class Inoculation {
     /*
      * 疫苗批次号
      */
-    private String inocBactchNo;
+    private String inocBatchNo;
 
     /*
      * 疫苗生产产家
@@ -63,14 +63,6 @@ public class Inoculation {
         this.inocDoctor = inocDoctor;
     }
 
-    public String getInocBactchNo() {
-        return inocBactchNo;
-    }
-
-    public void setInocBactchNo(String inocBactchNo) {
-        this.inocBactchNo = inocBactchNo;
-    }
-
     public String getInocCorpName() {
         return inocCorpName;
     }
@@ -95,13 +87,21 @@ public class Inoculation {
         this.inocModel = inocModel;
     }
 
+    public String getInocBatchNo() {
+        return inocBatchNo;
+    }
+
+    public void setInocBatchNo(String inocBatchNo) {
+        this.inocBatchNo = inocBatchNo;
+    }
+
     @Override
     public String toString() {
         return "Inoculation{" +
                 "inocBactCode='" + inocBactCode + '\'' +
                 ", inocBactName='" + inocBactName + '\'' +
                 ", inocDoctor='" + inocDoctor + '\'' +
-                ", inocBactchNo='" + inocBactchNo + '\'' +
+                ", inocBactchNo='" + inocBatchNo + '\'' +
                 ", inocCorpName='" + inocCorpName + '\'' +
                 ", inocModel='" + inocModel + '\'' +
                 ", inocValidDate='" + inocValidDate + '\'' +

@@ -325,7 +325,7 @@ public class MessageFactory {
         childInfo.setSignTypes(signTypes);
         List<Inoculation>  inoculations = new ArrayList<>();
         Inoculation inoc1 = new Inoculation();
-        inoc1.setInocBactchNo("20180101-1");
+        inoc1.setInocBatchNo("20180101-1");
         inoc1.setInocBactCode("0101");
         inoc1.setInocBactName("卡介苗");
         inoc1.setInocCorpName("深圳康泰");
@@ -334,7 +334,7 @@ public class MessageFactory {
         inoc1.setInocModel(FileUtils.getMd5ByFile(ImageUtils.getFile("0101.jpg")));
         inoculations.add(inoc1);
         Inoculation inoc2 = new Inoculation();
-        inoc2.setInocBactchNo("20180101-1");
+        inoc2.setInocBatchNo("20180101-1");
         inoc2.setInocBactCode("0201");
         inoc2.setInocBactName("乙肝");
         inoc2.setInocCorpName("深圳康泰");

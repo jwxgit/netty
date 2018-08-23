@@ -59,7 +59,7 @@ public class NettyServer {
         });
         ChannelFuture f= bootstrap.bind(port).sync();
         if(f.isSuccess()){
-            System.out.println("server start---------------");
+            System.out.println("server start---------------，当前端口：" + port);
          /*   sendCommands();*/
         }
     }
